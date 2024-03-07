@@ -1,3 +1,8 @@
+"""
+Pascal triangle implementation using dynamic programming
+"""
+
+
 def pascal_triangle(n):
     """
     Generate Pascal's Triangle up to the nth row using dynamic programming
