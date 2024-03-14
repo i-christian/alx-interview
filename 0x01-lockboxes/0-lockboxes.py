@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Using BFS algorithm
+Using DFS algorithm
 """
 
 
@@ -14,13 +14,13 @@ def canUnlockAll(boxes):
     Returns:
     - bool: True if all boxes can be opened, False otherwise.
     """
-    def dfs(current_box, visited):
+    num_boxes = len(boxes)
+    visited = set()
+    stack = [0]  # Start with the first box
+    while stack:
+        current_box = stack.pop()
         visited.add(current_box)
         for key in boxes[current_box]:
-            if key not in visited:
-                dfs(key, visited)
-
-    visited = set()
-    dfs(0, visited)
-
-    return len(visited) == len(boxes)
+            if key < num_boxes and key not in visited:
+                stack.append(key)
+    return len(visited) == num_boxes
