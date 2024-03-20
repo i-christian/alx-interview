@@ -20,11 +20,6 @@ This project aims to calculate the minimum number of operations required to achi
 ## Project Details
 
 - **Specialization**: Short Specializations
-- **Average Score**: 123.14%
-- **Project Start Date**: Mar 18, 2024 5:00 AM
-- **Project End Date**: Mar 22, 2024 5:00 AM
-- **Checker Release Date**: Mar 19, 2024 5:00 AM
-- **Auto Review**: Will be launched at the deadline
 - **Author**: Carrie Ybay, Software Engineer at Holberton School
 - **Weight**: 1
 
