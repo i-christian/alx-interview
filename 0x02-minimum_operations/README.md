@@ -30,10 +30,10 @@ This project aims to calculate the minimum number of operations required to achi
   - [Dynamic Programming (GeeksforGeeks)](https://www.geeksforgeeks.org/dynamic-programming/)
 - **Prime Factorization**:
   - Understanding how to perform prime factorization is crucial since the problem can be reduced to finding the sum of the prime factors of the target number n.
-  - [Prime Factorization (Khan Academy)](https://www.khanacademy.org/computing/computer-science/cryptography/comp-number-theory/v/prime-factorization)
+  - [Prime Factorization (Khan Academy)](https://www.khanacademy.org/math/pre-algebra/pre-algebra-factors-multiples/pre-algebra-prime-factorization-prealg/v/prime-factorization)
 - **Code Optimization**:
   - Knowing how to approach problems from an optimization perspective can be useful in finding the most efficient solution.
-  - [How to Optimize Python Code](https://stackabuse.com/optimizing-python-code/)
+  - [How to Optimize Python Code](https://stackify.com/how-to-optimize-python-code/)
 - **Greedy Algorithms**:
   - The problem can also be approached with greedy algorithms, choosing the best option at each step.
   - [Greedy Algorithms (GeeksforGeeks)](https://www.geeksforgeeks.org/greedy-algorithms/)
