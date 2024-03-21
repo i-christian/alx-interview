@@ -17,18 +17,19 @@ def minOperations(n):
     if n <= 1:
         return 0
 
-    # Initialize a list to store the minimum operations for each number
-    min_ops = [0] * (n + 1)
+    memo = {}  # Memoization dictionary
 
-    # Iterate from 2 to n (inclusive)
-    for i in range(2, n + 1):
-        # Initialize the minimum operations for the current number
-        min_ops[i] = i
+    def min_operations_recursive(n):
+        if n in memo:
+            return memo[n]
 
-        # Check for all factors of i
-        for j in range(2, i // 2 + 1):
-            # If j is a factor of i
-            if i % j == 0:
-                min_ops[i] = min(min_ops[i], min_ops[j] + min_ops[i // j])
+        min_ops = n  # Initialize min_ops with worst-case scenario
 
-    return min_ops[n]
+        for i in range(2, n // 2 + 1):
+            if n % i == 0:
+                min_ops = min(min_ops, min_operations_recursive(i) + min_operations_recursive(n // i))
+
+        memo[n] = min_ops
+        return min_ops
+
+    return min_operations_recursive(n)
