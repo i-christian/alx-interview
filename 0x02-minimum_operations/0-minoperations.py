@@ -25,9 +25,12 @@ def minOperations(n):
 
         min_ops = n  # Initialize min_ops with worst-case scenario
 
-        for i in range(2, n // 2 + 1):
+        # Find prime factors up to sqrt(n)
+        for i in range(2, int(n ** 0.5) + 1):
             if n % i == 0:
-                min_ops = min(min_ops, min_operations_recursive(i) + min_operations_recursive(n // i))
+                min_ops = min(min_ops,
+                              min_operations_recursive(i)
+                              + min_operations_recursive(n // i))
 
         memo[n] = min_ops
         return min_ops
