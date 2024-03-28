@@ -4,11 +4,12 @@ import sys
 from typing import Dict
 
 
-def print_statistics(status_codes: Dict[str, int], total_file_size: int) -> None:
+def print_statistics(status_codes: Dict[str, int],
+                     total_file_size: int) -> None:
     """Print statistics of status codes and total file size.
 
     Args:
-        status_codes (dict): Dictionary containing status codes and their counts.
+        status_codes: Dictionary containing status codes and their counts.
         total_file_size (int): Total size of the file.
     """
     print(f"File size: {total_file_size}")
@@ -33,7 +34,7 @@ counter: int = 0
 try:
     for line in sys.stdin:
         parsed_line = line.split()  # Trim and split the line
-        parsed_line = parsed_line[::-1]  # Reverse the list to get status code and file size
+        parsed_line = parsed_line[::-1]  # Reverse the list
 
         if len(parsed_line) > 2:
             counter += 1
@@ -43,7 +44,7 @@ try:
                 status_code = parsed_line[1]  # Extract status code
 
                 if status_code in status_codes:
-                    status_codes[status_code] += 1  # Increment status code count
+                    status_codes[status_code] += 1
 
             if counter == 10:
                 print_statistics(status_codes, total_file_size)
