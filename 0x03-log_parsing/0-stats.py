@@ -18,8 +18,8 @@ def print_statistics(status_codes: Dict[str, int],
             print(f"{code}: {count}")
 
 
-total_file_size: int = 0
-status_codes: Dict[str, int] = {
+total_file_size = 0
+status_codes = {
     "200": 0,
     "301": 0,
     "400": 0,
@@ -29,7 +29,7 @@ status_codes: Dict[str, int] = {
     "405": 0,
     "500": 0
 }
-counter: int = 0
+counter = 0
 
 try:
     for line in sys.stdin:
