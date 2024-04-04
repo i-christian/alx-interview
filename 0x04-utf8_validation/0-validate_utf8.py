@@ -4,7 +4,7 @@ Validates UTF-8 encoding.
 """
 
 
-def valid_UTF8(data):
+def validUTF8(data):
     """
     Determines if a given data set represents a valid UTF-8 encoding.
 
