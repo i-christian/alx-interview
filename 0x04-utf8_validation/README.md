@@ -1,7 +1,7 @@
 # UTF-8 Validation
 
 ## Introduction
-This repository contains the solution to the "0x04. UTF-8 Validation" project, focusing on implementing a method in Python to determine whether a given dataset represents a valid UTF-8 encoding. The project requires understanding of bitwise operations, UTF-8 encoding scheme, and Python programming skills.
+This diretory contains the solution to the "0x04. UTF-8 Validation" project, focusing on implementing a method in Python to determine whether a given dataset represents a valid UTF-8 encoding. The project requires understanding of bitwise operations, UTF-8 encoding scheme, and Python programming skills.
 
 
 ## Task Description
