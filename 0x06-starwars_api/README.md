@@ -23,9 +23,8 @@ This repository contains a script (`0-starwars_characters.js`) written in JavaSc
   - [JavaScript Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 ## Additional Resources
-- [Mock Technical Interview](https://www.interviewbit.com/mock-interview/)
-- [Requirements](https://github.com/alexadeveloper/alx-interview/tree/main/0x06-starwars_api#requirements)
-- [Tasks](https://github.com/alexadeveloper/alx-interview/tree/main/0x06-starwars_api#tasks)
+- [Mock Technical Interview](https://youtu.be/bmqZ5AhNr3g?si=LBKXGBz9mcJZr9SF)
+
 
 ## Requirements
 - Allowed editors: vi, vim, emacs
