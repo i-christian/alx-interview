@@ -56,7 +56,7 @@ By understanding these concepts and utilizing the provided resources, you will b
 
 ```bash
 ./main_0.py
-
+```
 ## Example Output
 
 ```
