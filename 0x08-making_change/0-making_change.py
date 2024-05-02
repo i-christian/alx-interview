@@ -18,15 +18,16 @@ def makeChange(coins, total):
 
     """
 
-    dp = [float('inf')] * (total + 1)
-    dp[0] = 0  # Base case: 0 coins needed for amount 0
-
-    # Iterate through each coin denomination
-    for coin in coins:
-        for i in range(coin, total + 1):
-            dp[i] = min(dp[i], dp[i - coin] + 1)
-
-    if dp[total] == float('inf'):
+    if not coins or coins is None:
         return -1
-    else:
-        return dp[total]
+    if total <= 0:
+        return 0
+    change = 0
+    coins = sorted(coins)[::-1]
+    for coin in coins:
+        while coin <= total:
+            total -= coin
+            change += 1
+        if (total == 0):
+            return change
+    return -1
