@@ -31,7 +31,7 @@ This project, "0. Change comes from within," addresses the classic coin change p
     - [Dynamic Programming - Coin Change Problem](https://www.youtube.com/watch?v=jaNZ83Q3QGc) for a visual and step-by-step explanation of the dynamic programming approach.
 
 ## Additional Resources
-- **Mock Technical Interview**
+- [Mock Technical Interview](https://www.youtube.com/watch?v=9BSSIsJ-fWg)
 
 ## Requirements
 ### General
